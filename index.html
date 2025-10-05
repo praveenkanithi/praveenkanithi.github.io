@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - ML Researcher</title>
+    <title>Praveen Kanithi</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -36,15 +36,16 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>Hi, I’m Praveen, a Principal Scientist at M42 in Abu Dhabi.
-                            I work on machine learning and AI for healthcare, across areas like clinical
+                            I work on machine learning for healthcare, across areas like clinical
                             language models, genomics, electronic health records, and medical imaging.
                             My day-to-day mostly involves figuring out how to make models a bit more
                             useful, reliable, and helpful in real-world clinical settings.</p>
-                        <p>I did my PhD at the HITLab in New Zealand. Outside of work, I enjoy hiking,
-                            traveling, and occasionally training Brazilian Jiu-Jitsu.</p>
+                        <p>I did my PhD at the HITLab in New Zealand, and masters from IIT Kharagpur. Outside of work, I
+                            enjoy hiking,
+                            traveling, and training Brazilian Jiu-Jitsu.</p>
                     </div>
                     <div class="profile-picture">
-                        <img src="profile.jpg" alt="Praveenkumar Kanithi" class="profile-img">
+                        <img src="figures/praveen.jpeg" alt="Praveenkumar Kanithi" class="profile-img">
                     </div>
                 </div>
 
@@ -83,34 +84,69 @@
             <section id="projects" class="section">
                 <h2>Projects</h2>
                 <div class="project">
-                    <h3>Project Title 1</h3>
-                    <p class="project-description">Brief description of your project, the problem it solves, and your
-                        approach. Include key technologies and methodologies used.</p>
+                    <h3>BioToken & BioFM: Biologically-Informed Genomic Foundation Modeling</h3>
+                    <p class="project-description">A modular tokenization framework and foundation model that
+                        integrate biological structure and function directly into genomic representations. This approach
+                        enhances generalization across molecular phenotypes and achieves state-of-the-art performance on
+                        diverse genomic prediction tasks with substantially reduced computational cost, demonstrating
+                        the power of biologically informed inductive biases in large-scale genomics.</p>
+                    <div class="project-image">
+                        <img src="figures/biotoken_biofm.png" alt="Project 1 Screenshot" class="project-img">
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/yourusername/project1" target="_blank">Code</a>
-                        <a href="#" target="_blank">Paper</a>
-                        <a href="#" target="_blank">Demo</a>
+                        <a href="https://www.biorxiv.org/content/10.1101/2025.03.27.645711v1" target="_blank">Paper</a>
+                        <a href="https://github.com/m42-health/biofm-eval/" target="_blank">Code</a>
+                        <a href="https://huggingface.co/m42-health/BioFM-265M" target="_blank">Model</a>
                     </div>
                 </div>
 
                 <div class="project">
-                    <h3>Project Title 2</h3>
-                    <p class="project-description">Another project description highlighting your research contributions
-                        and technical achievements.</p>
+                    <h3>MEDIC: Multidimensional Evaluation of Clinical LLMs</h3>
+                    <p class="project-description">A framework for evaluating large language models in
+                        healthcare across reasoning, ethics, safety, and language understanding. MEDIC introduces a
+                        novel cross-examination approach for assessing performance and hallucination without reference
+                        outputs, supporting informed model selection for diverse clinical applications.</p>
+                    <div class="project-image">
+                        <img src="figures/MEDIC_framework.png" alt="Project 2 Screenshot" class="project-img">
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/yourusername/project2" target="_blank">Code</a>
-                        <a href="#" target="_blank">Paper</a>
+                        <!-- <a href="https://github.com/yourusername/project2" target="_blank">Code</a> -->
+                        <a href="https://arxiv.org/abs/2409.07314" target="_blank">Paper</a>
+                        <a href="https://huggingface.co/spaces/m42-health/MEDIC-Benchmark" target="_blank">Demo</a>
                     </div>
                 </div>
 
                 <div class="project">
-                    <h3>Project Title 3</h3>
-                    <p class="project-description">Description of your third project, showcasing the breadth of your
-                        research interests and technical skills.</p>
+                    <h3>Med42: Open Medical Language Models</h3>
+                    <p class="project-description">An effort to build and refine open medical language
+                        models through clinical domain adaptation and alignment. The Med42 series explores ways to
+                        improve clinical reasoning, factual accuracy, and safety across a range of medical tasks,
+                        contributing open and reproducible resources for the research community.</p>
+                    <div class="project-image">
+                        <img src="figures/med42.png" alt="Project 3 Screenshot" class="project-img">
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/yourusername/project3" target="_blank">Code</a>
-                        <a href="#" target="_blank">Paper</a>
-                        <a href="#" target="_blank">Dataset</a>
+                        <!-- <a href="https://github.com/yourusername/project3" target="_blank">Code</a> -->
+                        <a href="https://arxiv.org/pdf/2408.06142" target="_blank">Paper</a>
+                        <a href="https://huggingface.co/m42-health/Llama3-Med42-70B" target="_blank">Model</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3>CXformer: Efficient Scaling of Vision Transformers for Chest X-ray Analysis</h3>
+                    <p class="project-description">A study adapting vision transformer architectures
+                        for clinical imaging. CXformer builds on DINOv2 through targeted architectural and training
+                        refinements, improving efficiency and performance on major chest X-ray benchmarks. The model
+                        demonstrates that training optimizations can outweigh scaling, achieving competitive results
+                        across classification, segmentation, and report generation tasks.</p>
+                    <div class="project-image">
+                        <img src="figures/CXformer.png" alt="Project 3 Screenshot" class="project-img">
+                    </div>
+                    <div class="project-links">
+                        <!-- <a href="https://github.com/yourusername/project3" target="_blank">Code</a> -->
+                        <a href="https://openreview.net/pdf?id=6fqfInxqG1" target="_blank">Paper</a>
+                        <a href="https://github.com/m42-health/CXformer/" target="_blank">Code</a>
+                        <a href="https://huggingface.co/m42-health/CXformer-base" target="_blank">Model</a>
                     </div>
                 </div>
             </section>
@@ -161,42 +197,82 @@
 
             <section id="publications" class="section">
                 <h2>Publications</h2>
+                <p class="publications-note">A full list of publications can be found on <a
+                        href="https://scholar.google.com/citations?user=UFf9NzMAAAAJ&hl=en" target="_blank">Google
+                        Scholar</a>. * indicates equal contribution.</p>
+
                 <div class="publication">
-                    <h3>Paper Title 1</h3>
-                    <p class="authors">Your Name, Co-author 1, Co-author 2</p>
-                    <p class="venue">Conference/Journal Name, Year</p>
-                    <div class="publication-links">
-                        <a href="#" target="_blank">PDF</a>
-                        <a href="#" target="_blank">Code</a>
-                        <a href="#" target="_blank">Dataset</a>
-                    </div>
+                    <p class="publication-text">Maslenkova, S., Christophe, C., Pimentel, M. A., ... <b>Kanithi,
+                            P.</b> Building Trust in Clinical Analysis: Bias Analysis and Dataset Transparency.
+                        <em>EMNLP 2025
+                            (Accepted)</em>. <a href="#" target="_blank">PDF</a> | <a href="#"
+                            target="_blank">Dataset</a>
+                    </p>
                 </div>
 
                 <div class="publication">
-                    <h3>Paper Title 2</h3>
-                    <p class="authors">Your Name, Co-author 1, Co-author 2</p>
-                    <p class="venue">Conference/Journal Name, Year</p>
-                    <div class="publication-links">
-                        <a href="#" target="_blank">PDF</a>
-                        <a href="#" target="_blank">Code</a>
-                    </div>
+                    <p class="publication-text">Medvedev, A.*, Viswanathan, K.*, <b>Kanithi, P.*</b>, Vishniakov, K.,
+                        Munjal, P., Christophe, C., ... & Khan, S. (2025). BioToken and BioFM-Biologically-Informed
+                        Tokenization Enables Accurate and Efficient Genomic Foundation Models. bioRxiv, 2025-03. <a
+                            href="https://huggingface.co/m42-health/BioFM-265M" target="_blank">PDF</a> | <a
+                            href="https://github.com/m42-health/biofm-eval/" target="_blank">Code</a> | <a
+                            href="https://huggingface.co/m42-health/BioFM-265M" target="_blank">Model</a></p>
                 </div>
 
                 <div class="publication">
-                    <h3>Paper Title 3</h3>
-                    <p class="authors">Your Name, Co-author 1, Co-author 2</p>
-                    <p class="venue">Conference/Journal Name, Year</p>
-                    <div class="publication-links">
-                        <a href="#" target="_blank">PDF</a>
-                        <a href="#" target="_blank">Code</a>
-                        <a href="#" target="_blank">Demo</a>
-                    </div>
+                    <p class="publication-text">Al-Mahrooqi, A., Munjal, P., Rajan, R., Pimentel, M. A.,
+                        <b>Kanithi, P.</b> (2025). <em>Empirical Analysis of Scaling Vision Foundation Models for Chest
+                            X-rays. In Medical Imaging with Deep Learning</em>. <a
+                            href="https://openreview.net/pdf?id=6fqfInxqG1" target="_blank">PDF</a> | <a
+                            href="https://huggingface.co/m42-health/CXformer-base" target="_blank">Model</a>
+                    </p>
+                </div>
+
+                <div class="publication">
+                    <p class="publication-text"><b>Kanithi, P. K.</b>, Christophe, C., Pimentel, M. A., Raha, T., Saadi,
+                        N., Javed, H., ... & Khan, S. (2024). MEDIC: Towards a Comprehensive Framework for Evaluating
+                        LLMs in Clinical Applications. arXiv preprint arXiv:2409.07314. <em>(Presented at NVIDIA GTC
+                            2025)</em> <a href="https://arxiv.org/abs/2409.07314" target="_blank">PDF</a> | <a
+                            href="https://huggingface.co/spaces/m42-health/MEDIC-Benchmark" target="_blank">Demo</a></p>
+                </div>
+
+                <div class="publication">
+                    <p class="publication-text">Christophe, C., Raha, T., Maslenkova, S., Salman, M. U., <b>Kanithi,
+                            P.</b>,
+                        Pimentel, M., & Khan, S. (2024, November). Beyond Fine-tuning: Unleashing the Potential of
+                        Continuous Pretraining for Clinical LLMs. <em>In Findings of the Association for Computational
+                            Linguistics: EMNLP 2024</em> (pp. 10549-10561). <a
+                            href="https://aclanthology.org/2024.findings-emnlp.618/" target="_blank">PDF</a></p>
+                </div>
+
+                <div class="publication">
+                    <p class="publication-text">Christophe, C., <b>Kanithi, P. K.</b>, Munjal, P., Raha, T., Hayat, N.,
+                        Rajan, R., ... & Khan, S. (2024). Med42--Evaluating Fine-Tuning Strategies for Medical LLMs:
+                        Full-Parameter vs. Parameter-Efficient Approaches. <em>(Accepted at AAAI Clinical LLM
+                            symposium)</em> <a href="https://arxiv.org/abs/2404.14779" target="_blank">PDF</a> | <a
+                            href="https://huggingface.co/spaces/m42-health/med42-70b" target="_blank">Model</a></p>
+                </div>
+
+                <div class="publication">
+                    <p class="publication-text"><b>Kanithi, Praveenkumar</b>, et al. "Interactive image segmentation
+                        of MARS datasets using bag of features." <em>IEEE Transactions on Radiation and Plasma Medical
+                            Sciences 5.4 (2020)</em>: 559-567. <a href="https://ieeexplore.ieee.org/document/9225700/"
+                            target="_blank">PDF</a></p>
+                </div>
+
+                <div class="publication">
+                    <p class="publication-text"><b>Kanithi, Praveenkumar</b>, Jyotirmoy Chatterjee, and Debdoot Sheet.
+                        "Immersive augmented reality system for assisting needle positioning during ultrasound guided
+                        intervention." <em>Proceedings of the Tenth Indian Conference on Computer Vision, Graphics and
+                            Image
+                            Processing. 2016</em>. <a href="https://dl.acm.org/doi/abs/10.1145/3009977.3010023"
+                            target="_blank">PDF</a></p>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Praveenkumar Kanithi. All rights reserved.</p>
         </footer>
     </div>
 
