@@ -364,7 +364,6 @@ body {
 
 .publication-text em {
     font-style: italic;
-    color: #34495e;
 }
 
 .publication-text a {
@@ -454,11 +453,6 @@ body {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-    }
-
-    .navigation {
-        border-bottom: none;
-        box-shadow: none;
     }
 
     .nav-tabs {
