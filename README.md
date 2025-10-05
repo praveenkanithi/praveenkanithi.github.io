@@ -1,6 +1,6 @@
-# ML Researcher Portfolio
+# Praveen Kanithi - ML Researcher Portfolio
 
-A clean, professional portfolio website for machine learning researchers. This portfolio features a minimal design that focuses on content over flashy visuals, perfect for academic and research professionals.
+A clean, professional portfolio website showcasing the research work of Praveen Kanithi, Principal Scientist at M42. This portfolio features a minimal design that focuses on content over flashy visuals, highlighting research in machine learning for healthcare, including clinical language models, genomics, electronic health records, and medical imaging.
 
 ## Features
 
@@ -12,10 +12,14 @@ A clean, professional portfolio website for machine learning researchers. This p
 
 ## Sections
 
-1. **Introduction**: Personal statement and current position
-2. **Recent Projects**: Showcase of your research projects with links to code, papers, and demos
-3. **Education**: Academic background and qualifications
-4. **Publications**: Research papers and publications with links to PDFs and code
+1. **About**: Personal statement, current position at M42, and research focus areas
+2. **Projects**: Showcase of key research projects including:
+   - BioToken & BioFM: Biologically-informed genomic foundation modeling
+   - MEDIC: Multidimensional evaluation framework for clinical LLMs
+   - Med42: Open medical language models
+   - CXformer: Efficient vision transformers for chest X-ray analysis
+3. **Education**: Academic background including PhD from HITLab (University of Canterbury) and M.Tech from IIT Kharagpur
+4. **Publications**: Research papers and publications with links to PDFs, code, and models
 
 ## Setup Instructions
 
@@ -26,14 +30,14 @@ A clean, professional portfolio website for machine learning researchers. This p
 3. Push to your GitHub repository
 4. Go to Settings > Pages in your GitHub repository
 5. Select "Deploy from a branch" and choose "main"
-6. Your portfolio will be available at `https://yourusername.github.io/repository-name`
+6. Your portfolio will be available at `https://praveenkanithi.github.io/`
 
 ### Option 2: Local Development
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio.git
-   cd your-portfolio
+   git clone https://github.com/praveenkanithi/praveenkanithi.github.io.git
+   cd your-repository-name
    ```
 
 2. Open `index.html` in your web browser or use a local server:
@@ -53,11 +57,11 @@ A clean, professional portfolio website for machine learning researchers. This p
 
 Edit the following sections in `index.html`:
 
-1. **Header Section**: Update your name, title, and contact links
-2. **Introduction**: Write your personal statement and current position
-3. **Recent Projects**: Add your projects with descriptions and links
-4. **Education**: List your academic qualifications
-5. **Publications**: Add your research papers and publications
+1. **Header Section**: Update your name, title, and contact links (GitHub, Google Scholar, LinkedIn, Hugging Face)
+2. **About Section**: Write your personal statement, current position, and research focus areas
+3. **Projects Section**: Add your research projects with descriptions, images, and links to papers, code, and models
+4. **Education Section**: List your academic qualifications including thesis information
+5. **Publications Section**: Add your research papers and publications with links to PDFs, code, and models
 
 ### Styling
 
@@ -85,6 +89,12 @@ You can easily modify these colors in the CSS file.
 portfolio/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styling
+├── figures/            # Project images and profile picture
+│   ├── biotoken_biofm.png
+│   ├── CXformer.png
+│   ├── med42.png
+│   ├── MEDIC_framework.png
+│   └── praveen.jpeg
 └── README.md          # This file
 ```
 
