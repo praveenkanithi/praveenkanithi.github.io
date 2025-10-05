@@ -456,6 +456,11 @@ body {
         display: flex;
     }
 
+    .navigation {
+        border-bottom: none;
+        box-shadow: none;
+    }
+
     .nav-tabs {
         position: fixed;
         top: 0;
