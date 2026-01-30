@@ -276,7 +276,7 @@
         </main>
 
         <footer class="footer">
-            <p>&copy; 2025 Praveenkumar Kanithi. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Praveenkumar Kanithi. All rights reserved.</p>
         </footer>
     </div>
 
@@ -345,6 +345,9 @@
         document.addEventListener('DOMContentLoaded', function () {
             const hash = window.location.hash.substring(1) || 'about';
             showPage(hash);
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
         });
     </script>
 </body>
