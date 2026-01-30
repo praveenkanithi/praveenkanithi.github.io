@@ -23,7 +23,7 @@
                 <span class="hamburger-line"></span>
             </button>
             <ul class="nav-tabs" id="nav-tabs">
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#about" class="nav-link active">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#publications" class="nav-link">Publications</a></li>
@@ -31,7 +31,7 @@
         </nav>
 
         <main>
-            <section id="about" class="section">
+            <section id="about" class="section page active">
                 <h2>About</h2>
                 <div class="about-content">
                     <div class="about-text">
@@ -81,7 +81,7 @@
                 </div>
             </section>
 
-            <section id="projects" class="section">
+            <section id="projects" class="section page">
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>BioToken & BioFM: Biologically-Informed Genomic Foundation Modeling</h3>
@@ -151,7 +151,7 @@
                 </div>
             </section>
 
-            <section id="education" class="section">
+            <section id="education" class="section page">
                 <h2>Education</h2>
                 <div class="education-item">
                     <h3>Ph.D.</h3>
@@ -195,7 +195,7 @@
                 </div>
             </section>
 
-            <section id="publications" class="section">
+            <section id="publications" class="section page">
                 <h2>Publications</h2>
                 <p class="publications-note">A full list of publications can be found on <a
                         href="https://scholar.google.com/citations?user=UFf9NzMAAAAJ&hl=en" target="_blank">Google
@@ -204,8 +204,7 @@
                 <div class="publication">
                     <p class="publication-text">Maslenkova, S., Christophe, C., Pimentel, M. A., ... <b>Kanithi,
                             P.</b> Building Trust in Clinical Analysis: Bias Analysis and Dataset Transparency.
-                        <em>EMNLP 2025
-                            (Accepted)</em>. <a href="https://aclanthology.org/2025.emnlp-main.1174/"
+                        <em>EMNLP 2025</em>. <a href="https://aclanthology.org/2025.emnlp-main.1174/"
                             target="_blank">PDF</a> | <a href="https://huggingface.co/datasets/m42-health/HC4"
                             target="_blank">Dataset</a>
                     </p>
@@ -299,42 +298,53 @@
             });
         });
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Highlight active navigation link based on scroll position
-        window.addEventListener('scroll', function () {
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
+        // Page switching functionality
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
             });
 
-            navLinks.forEach(link => {
+            // Show target page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+
+            // Update active nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
+                if (link.getAttribute('href') === '#' + pageId) {
                     link.classList.add('active');
                 }
             });
+
+            // Scroll to top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Update URL hash without triggering scroll
+            history.pushState(null, null, '#' + pageId);
+        }
+
+        // Navigation link click handlers
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                showPage(targetId);
+            });
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function () {
+            const hash = window.location.hash.substring(1) || 'about';
+            showPage(hash);
+        });
+
+        // Initialize: show page based on URL hash or default to 'about'
+        document.addEventListener('DOMContentLoaded', function () {
+            const hash = window.location.hash.substring(1) || 'about';
+            showPage(hash);
         });
     </script>
 </body>
