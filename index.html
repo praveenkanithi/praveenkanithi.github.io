@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen Kanithi</title>
+    <meta name="description"
+        content="Praveen Kanithi - Clinical AI Researcher specializing in Large Language Models, Genomics, and Medical Imaging. Principal Scientist at M42, Abu Dhabi.">
+    <meta name="keywords" content="Clinical AI, Machine Learning, Healthcare, LLM, Medical Imaging, Genomics, NLP">
+    <meta name="author" content="Praveenkumar Kanithi">
+    <title>Praveen Kanithi | Clinical AI Researcher</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +19,7 @@
     <div class="container">
         <header class="header">
             <h1 class="name">Praveenkumar Kanithi</h1>
-            <p class="title">Clnical AI Researcher</p>
+            <p class="title">Clinical AI Researcher</p>
         </header>
 
         <nav class="navigation">
@@ -50,9 +56,6 @@
                 </div>
 
                 <div class="contact-links">
-                    <a href="mailto:kanithi.praveenkumar7@gmail.com" class="contact-link">
-                        <span class="contact-icon">📧</span> Email
-                    </a>
                     <a href="https://github.com/praveenkanithi" target="_blank" class="contact-link">
                         <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                             <path
@@ -85,13 +88,16 @@
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>BioToken & BioFM: Biologically-Informed Genomic Foundation Modeling</h3>
-                    <p class="project-description">A modular tokenization framework and foundation model that
-                        integrate biological structure and function directly into genomic representations. This approach
-                        enhances generalization across molecular phenotypes and achieves state-of-the-art performance on
-                        diverse genomic prediction tasks with substantially reduced computational cost, demonstrating
-                        the power of biologically informed inductive biases in large-scale genomics.</p>
+                    <p class="project-description">A modular tokenization framework and foundation model that integrate
+                        biological structure and function directly into genomic representations.</p>
+                    <ul class="project-highlights">
+                        <li>State-of-the-art performance on diverse genomic prediction tasks</li>
+                        <li>Substantially reduced computational cost through biologically-informed inductive biases</li>
+                        <li>Enhanced generalization across molecular phenotypes</li>
+                    </ul>
                     <div class="project-image">
-                        <img src="figures/biotoken_biofm.png" alt="Project 1 Screenshot" class="project-img">
+                        <img src="figures/biotoken_biofm.png" alt="BioToken and BioFM Framework Architecture"
+                            class="project-img">
                     </div>
                     <div class="project-links">
                         <a href="https://www.biorxiv.org/content/10.1101/2025.03.27.645711v1" target="_blank">Paper</a>
@@ -102,12 +108,16 @@
 
                 <div class="project">
                     <h3>MEDIC: Multidimensional Evaluation of Clinical LLMs</h3>
-                    <p class="project-description">A framework for evaluating large language models in
-                        healthcare across reasoning, ethics, safety, and language understanding. MEDIC introduces a
-                        novel cross-examination approach for assessing performance and hallucination without reference
-                        outputs, supporting informed model selection for diverse clinical applications.</p>
+                    <p class="project-description">A comprehensive framework for evaluating large language models in
+                        healthcare across multiple dimensions.</p>
+                    <ul class="project-highlights">
+                        <li>Evaluates reasoning, ethics, safety, and language understanding</li>
+                        <li>Novel cross-examination approach for hallucination detection without reference outputs</li>
+                        <li>Presented at NVIDIA GTC 2025</li>
+                    </ul>
                     <div class="project-image">
-                        <img src="figures/MEDIC_framework.png" alt="Project 2 Screenshot" class="project-img">
+                        <img src="figures/MEDIC_framework.png" alt="MEDIC Evaluation Framework Diagram"
+                            class="project-img">
                     </div>
                     <div class="project-links">
                         <!-- <a href="https://github.com/yourusername/project2" target="_blank">Code</a> -->
@@ -118,12 +128,16 @@
 
                 <div class="project">
                     <h3>Med42: Open Medical Language Models</h3>
-                    <p class="project-description">An effort to build and refine open medical language
-                        models through clinical domain adaptation and alignment. The Med42 series explores ways to
-                        improve clinical reasoning, factual accuracy, and safety across a range of medical tasks,
-                        contributing open and reproducible resources for the research community.</p>
+                    <p class="project-description">Building and refining open medical language models through clinical
+                        domain adaptation and alignment.</p>
+                    <ul class="project-highlights">
+                        <li>Improved clinical reasoning, factual accuracy, and safety</li>
+                        <li>Open and reproducible resources for the research community</li>
+                        <li>Published at AAAI Clinical LLM Symposium</li>
+                    </ul>
                     <div class="project-image">
-                        <img src="figures/med42.png" alt="Project 3 Screenshot" class="project-img">
+                        <img src="figures/med42.png" alt="Med42 Medical Language Model Architecture"
+                            class="project-img">
                     </div>
                     <div class="project-links">
                         <!-- <a href="https://github.com/yourusername/project3" target="_blank">Code</a> -->
@@ -134,13 +148,16 @@
 
                 <div class="project">
                     <h3>CXformer: Efficient Scaling of Vision Transformers for Chest X-ray Analysis</h3>
-                    <p class="project-description">A study adapting vision transformer architectures
-                        for clinical imaging. CXformer builds on DINOv2 through targeted architectural and training
-                        refinements, improving efficiency and performance on major chest X-ray benchmarks. The model
-                        demonstrates that training optimizations can outweigh scaling, achieving competitive results
-                        across classification, segmentation, and report generation tasks.</p>
+                    <p class="project-description">Adapting vision transformer architectures for clinical imaging,
+                        building on DINOv2 through targeted refinements.</p>
+                    <ul class="project-highlights">
+                        <li>Improved efficiency and performance on major chest X-ray benchmarks</li>
+                        <li>Demonstrates training optimizations can outweigh raw scaling</li>
+                        <li>Competitive results across classification, segmentation, and report generation</li>
+                    </ul>
                     <div class="project-image">
-                        <img src="figures/CXformer.png" alt="Project 3 Screenshot" class="project-img">
+                        <img src="figures/CXformer.png" alt="CXformer Vision Transformer Performance Chart"
+                            class="project-img">
                     </div>
                     <div class="project-links">
                         <!-- <a href="https://github.com/yourusername/project3" target="_blank">Code</a> -->
