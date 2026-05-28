@@ -396,6 +396,16 @@ body {
     color: white;
 }
 
+/* Background section subheadings */
+.section-subheading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 12px;
+}
+
 /* Education styles */
 .education-item {
     margin-bottom: 30px;
