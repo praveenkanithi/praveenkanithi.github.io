@@ -118,7 +118,6 @@ h2 {
 
 .news li:last-child { border-bottom: none; }
 .news time { color: var(--muted); font-size: var(--fs-sm); padding-top: 2px; font-variant-numeric: tabular-nums; }
-.news b { color: var(--heading); }
 
 details summary {
     cursor: pointer;
@@ -135,10 +134,14 @@ details[open] summary { border-bottom: 1px solid var(--rule); }
 .pub p { margin: 0; font-size: var(--fs-sm); }
 .pub .pub-title { font-weight: 600; font-size: var(--fs-md); color: var(--heading); }
 .pub em { color: var(--muted); }
+.pub p:last-child a { text-decoration: none; }
+.pub p:last-child a:hover { text-decoration: underline; }
 
 /* Experience / education */
 .row { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
 .row > span:last-child { color: var(--muted); font-size: var(--fs-sm); white-space: nowrap; }
+.row > span:first-child { color: var(--muted); }
+.role { color: var(--heading); font-weight: 500; }
 .thesis { color: var(--muted); font-style: italic; font-size: var(--fs-sm); margin: -4px 0 12px; }
 
 footer {
